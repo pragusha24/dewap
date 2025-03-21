@@ -1,0 +1,751 @@
+/* Reset gaya dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px; /* Ukuran logo lebih kecil agar proporsional */
+    height: auto;
+    margin-right: 15px; /* Jarak antara logo dan teks */
+}
+
+.title {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.title h1,
+.title h2 {
+    margin: 0;
+}
+
+.date {
+    margin-left: auto;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003366;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    padding: 10px 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+/* Gambar Utama */
+.main-image img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Pengumuman */
+.announcement {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.announcement-text {
+    display: flex;
+    animation: scroll-text 20s linear infinite;
+}
+
+.announcement-text p {
+    margin: 0 50px;
+    white-space: nowrap;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.success {
+    background-color: #d4edda; /* Warna hijau lembut */
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da; /* Warna merah lembut */
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Profil */
+.profil {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profil h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.profil-content p,
+.profil-content ul {
+    margin-bottom: 15px;
+}
+
+.profil-content ul {
+    padding-left: 20px;
+}
+
+.profil-content ul li {
+    margin-bottom: 10px;
+}
+
+/* PPDB */
+.ppdb {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.ppdb h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.ppdb form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ppdb form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.ppdb form input[type="text"],
+.ppdb form input[type="date"],
+.ppdb form input[type="email"],
+.ppdb form textarea,
+.ppdb form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ppdb form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.ppdb form input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ppdb form input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+.ppdb form input[type="submit"]:active {
+    background-color: #002244;
+}
+
+.ppdb form input:focus,
+.ppdb form textarea:focus,
+.ppdb form select:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .ppdb {
+        padding: 15px;
+    }
+
+    .ppdb h2 {
+        font-size: 20px;
+    }
+
+    .ppdb form label {
+        font-size: 13px;
+    }
+}
+
+/* Kategori Section */
+.kategori {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kategori h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #0056b3;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.kategori-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.kategori-item {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kategori-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kategori-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.kategori-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.kategori-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.kategori-item a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .kategori h2 {
+        font-size: 24px;
+    }
+
+    .kategori-item {
+        padding: 15px;
+    }
+
+    .kategori-item h3 {
+        font-size: 18px;
+    }
+
+    .kategori-item p {
+        font-size: 13px;
+    }
+
+    .kategori-item a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+}
+
+/* Profil Page Styling */
+.profil {
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ffffff; /* Menghilangkan background kertas */
+}
+
+.profil-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Memberikan ruang antar gambar dan teks */
+    margin-top: 20px;
+}
+
+.profil-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ketua-img {
+    width: 150px; /* Ukuran gambar ketua yang lebih kecil */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #003366;
+}
+
+.profil-details {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.profil-details p {
+    margin: 5px 0;
+}
+
+.profil-text {
+    max-width: 700px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.profil-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.profil-text p {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+
+/* Pendaftaran Alumni PKBM NURUL IMAN */
+.pendaftaran-alumni {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.pendaftaran-alumni h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.pendaftaran-alumni form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pendaftaran-alumni form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.pendaftaran-alumni form input[type="text"],
+.pendaftaran-alumni form input[type="date"],
+.pendaftaran-alumni form input[type="email"],
+.pendaftaran-alumni form input[type="tel"],
+.pendaftaran-alumni form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pendaftaran-alumni form input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pendaftaran-alumni form input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+.pendaftaran-alumni form input[type="submit"]:active {
+    background-color: #002244;
+}
+
+.pendaftaran-alumni form input:focus,
+.pendaftaran-alumni form select:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .pendaftaran-alumni {
+        padding: 15px;
+    }
+
+    .pendaftaran-alumni h2 {
+        font-size: 20px;
+    }
+
+    .pendaftaran-alumni form label {
+        font-size: 13px;
+    }
+}
+
+/* CSS untuk Halaman Galeri */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+
+/* CSS untuk Halaman Materi */
+.materi-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.materi-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.materi-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.materi-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.materi-list li {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling untuk link daftar materi */
+.materi-list li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.materi-list li a:hover {
+    color: #0056b3;
+}
+
+/* Styling tombol download agar tidak menyatu dan warna teks putih */
+.download-btn {
+    display: inline-block;
+    background-color: #28a745; /* Warna hijau */
+    color: white !important; /* Warna teks putih */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px; /* Memberi jarak dari elemen sebelahnya */
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Halaman Hubungi Kami */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Tombol Media Sosial */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Style Direktori */
+.directory-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background: #004080;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.directory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.directory-table th, .directory-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.directory-table th {
+    background-color: #004080;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    margin-top: 20px;
+}
